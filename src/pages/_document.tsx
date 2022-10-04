@@ -15,10 +15,7 @@ function Document() {
           href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
           rel="stylesheet"
         />
-        {/* <!-- SimpleAnalytics --> */}
-        <script async defer src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
-        <noscript><img src="https://queue.simpleanalyticscdn.com/noscript.gif" alt="" referrerPolicy="no-referrer-when-downgrade" /></noscript>
-
+       
         <meta name="application-name" content="Dear Anonymous" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="default" />

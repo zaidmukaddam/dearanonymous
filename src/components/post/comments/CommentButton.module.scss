@@ -1,0 +1,10 @@
+.CommentButton {
+  font-size: 0.7rem;
+  color: #8e8e8e;
+  user-select: none;
+}
+
+.CommentButton:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}

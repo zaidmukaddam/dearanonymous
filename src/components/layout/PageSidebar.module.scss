@@ -1,0 +1,13 @@
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 10%;
+  position: sticky;
+  overflow: auto;
+  top: 1rem;
+  height: calc(100vh - 6.4rem);
+  padding-top: 4.4rem;
+  @media screen and (max-width: 87rem) {
+    display: none;
+  }
+}

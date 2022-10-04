@@ -1,0 +1,76 @@
+.ProfilePersonalInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  /* padding: 0.5rem; */
+  margin-left: -0.1rem;
+}
+
+.ProfilePersonalInfoEditing {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.PersonalInfoIcon {
+  flex-shrink: 0;
+}
+
+.ProfilePersonalInfoEditingEntry {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.PersonalInfoInput {
+  width: 100%;
+  border: 1px solid black;
+  padding: 0.4rem;
+  box-sizing: border-box;
+}
+
+.PersonalInfoInput:focus {
+  outline: 1px solid black;
+}
+
+.ProfilePersonalInfoEditingHeader {
+  font-size: 0.8rem;
+  font-weight: 600;
+  user-select: none;
+  cursor: default;
+}
+
+.PopupContent {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.PopupButtons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.PopupAction {
+  margin-top: 1rem;
+  color: rgb(50, 60, 70);
+  width: 5rem;
+  height: 2rem;
+  border: none;
+  background-color: rgb(230, 235, 240);
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  &:hover {
+    background-color: rgb(220, 225, 230);
+  }
+}
+
+.Popup[data-reach-dialog-content] {
+  width: 40% !important;
+  @media (max-width: 30rem) {
+    width: 80% !important;
+  }
+}

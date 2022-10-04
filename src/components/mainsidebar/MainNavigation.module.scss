@@ -1,0 +1,229 @@
+.Sidebar {
+  position: sticky;
+  top: 1rem;
+  display: flex;
+  flex-direction: column;
+  flex: 1 0 10%;
+  overflow: auto;
+  height: calc(100vh - 2rem);
+  justify-content: space-between;
+
+  @media screen and (max-width: 87rem) {
+    flex: 0 0 3.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  @media screen and (max-width: 30rem) {
+    display: none;
+  }
+}
+
+.Footer {
+  z-index: 1;
+  position: fixed;
+  flex-direction: row;
+  bottom: 0;
+  background-color: #e6d4d5;
+  height: 3rem;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+
+  @media screen and (min-width: 30rem) {
+    display: none;
+  }
+}
+
+.SidebarTop {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding-top: 0.3rem;
+
+  @media screen and (max-width: 87rem) {
+    align-items: center;
+  }
+}
+
+.SidebarLogo {
+  width: 5rem;
+
+  @media screen and (max-width: 87rem) {
+    width: 3rem;
+    margin-left: 0;
+  }
+
+  margin-left: -0.1rem;
+  user-select: none;
+}
+
+.SidebarList {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-top: -0.5rem;
+  padding: 0;
+
+  @media screen and (max-width: 30rem) {
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+    height: 100%;
+    margin-top: 0;
+  }
+}
+
+.SidebarListItem {
+  font-size: 2rem;
+  text-decoration: none;
+  user-select: none;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+
+  @media screen and (max-width: 87rem) {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.SidebarListItemLabel {
+  font-size: 1.7rem;
+
+  @media only screen and (max-width: 87rem) {
+    display: none;
+  }
+}
+
+.SidebarListItemActive {
+  font-weight: bold;
+}
+
+.SidebarListItemLink {
+  color: black;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.4rem 0.4rem;
+  border-radius: 0.3rem;
+
+  @media screen and (min-width: 30rem) {
+    &:hover {
+      background-color: rgb(210, 183, 204);
+    }
+  }
+
+  @media screen and (max-width: 30rem) {
+    width: 100%;
+    gap: 0;
+    padding: 0;
+    justify-content: center;
+
+    &:active {
+      transform: scale(0.9);
+    }
+  }
+}
+
+.ProfileIconOutline {
+  path {
+    stroke-width: 40;
+  }
+}
+
+.AboutIconOutline {
+  path:first-of-type {
+    stroke-width: 40;
+  }
+}
+
+.SearchIconFilled {
+
+  // second path
+  path:nth-of-type(2) {
+    stroke-width: 1;
+  }
+}
+
+.NewPostButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  border: 0.1rem solid black;
+  border-radius: 0.3rem;
+  cursor: pointer;
+  width: 100%;
+  height: 3rem;
+  background-color: white;
+  font-size: 1.6rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+
+  @media screen and (max-width: 87rem) {
+    span {
+      display: none;
+    }
+
+    width: 3.2rem;
+    padding: 0.3rem;
+  }
+}
+
+.NewPostButtonIcon {
+  display: none;
+
+  @media screen and (max-width: 87rem) {
+    display: block;
+
+    path {
+      stroke-width: 40;
+    }
+  }
+}
+
+.NewPostButtonLink {
+  text-decoration: none;
+  user-select: none;
+}
+
+.SubmitIconOutline {
+  box-sizing: border-box;
+  border: 0.15rem solid black;
+  border-radius: 0.3rem;
+
+  path {
+    stroke-width: 50;
+  }
+}
+
+.SubmitIconFilled {
+  box-sizing: border-box;
+  border: 0.2rem solid black;
+  border-radius: 0.3rem;
+
+  path {
+    stroke-width: 60;
+  }
+}
+
+.NotificationsIconContainer {
+  .UnreadNotif {
+    position: absolute;
+    padding: 0rem 0.3rem;
+    bottom: 50%;
+    left: 50%;
+    background-color: rgb(15, 75, 149);
+    font-size: 0.65rem;
+    font-weight: bold;
+    border-radius: 999px;
+    color: rgb(255, 255, 255);
+  }
+
+  position: relative;
+  display: flex;
+}

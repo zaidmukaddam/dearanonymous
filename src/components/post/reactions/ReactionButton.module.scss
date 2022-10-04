@@ -1,0 +1,25 @@
+.ReactionButton {
+  display: flex;
+}
+
+.PostReactionButton {
+  gap: 0.3rem;
+}
+
+.CommentReactionButton {
+  gap: 0.25rem;
+  font-size: 0.8rem;
+}
+
+.PostReactionButtonCount {
+  margin-top: 0.1rem;
+}
+
+.CommentReactionButtonCount {
+  margin-top: 0.1rem;
+}
+
+.Reacted {
+  font-weight: bold;
+  color: #164b7b;
+}

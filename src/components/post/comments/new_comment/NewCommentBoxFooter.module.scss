@@ -1,0 +1,31 @@
+.NewCommentBoxFooter {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1em;
+}
+
+.PopupButtons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.CancelConfirmationBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.CancelConfirmationOptions {
+  display: flex;
+  flex-direction: row;
+  gap: 6rem;
+}
+
+.CancelConfirmationText {
+  text-align: center;
+}

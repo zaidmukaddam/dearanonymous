@@ -1,0 +1,63 @@
+{
+  "short_name": "Dear Anonymous",
+  "name": "Dear Anonymous",
+  "description": "The unofficial anonymous post board for students at NMIMS.",
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "sizes": "32x32",
+      "type": "image/x-icon",
+      "purpose": "any"
+    },
+    {
+      "src": "icons/logo192.png",
+      "type": "image/png",
+      "sizes": "192x192",
+      "purpose": "any"
+    },
+    {
+      "src": "icons/logo512.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "any"
+    },
+    {
+      "src": "icons/apple-touch-icon.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "New post",
+      "url": "/submit",
+      "description": "Submit a new post",
+      "icons": [
+        {
+          "src": "icons/post.png",
+          "type": "image/png",
+          "sizes": "100x100"
+        }
+      ]
+    },
+    {
+      "name": "Search",
+      "url": "/search",
+      "description": "Search for posts",
+      "icons": [
+        {
+          "src": "icons/search.png",
+          "type": "image/png",
+          "sizes": "100x100"
+        }
+      ]
+    }
+  ],
+  "related_applications": [],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#d5ebff",
+  "background_color": "#d5ebff",
+  "orientation": "portrait"
+}

@@ -1,0 +1,17 @@
+.NoResults {
+  align-items: center;
+}
+
+.NoResultsText {
+  text-align: center;
+  margin-top: 5rem;
+  color: #567;
+  font-size: 2rem;
+}
+
+@media screen and (max-width: 46rem) {
+  .NoResultsText {
+    font-size: 1.4rem;
+    margin-top: 1rem;
+  }
+}

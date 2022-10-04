@@ -1,0 +1,34 @@
+.myMasonryGrid {
+  display: flex;
+}
+
+.myMasonryGridColumn {
+  padding-left: 1rem;
+  /* gutter size */
+  background-clip: padding-box;
+
+  &:first-child {
+    padding-left: 0;
+  }
+}
+
+.myMasonryGridColumn>div {
+  /* change div to reference your elements you put in <Masonry> */
+  margin-bottom: 1rem;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.FeedFinished {
+  // padding-top: 1rem;
+  // align-self: center;
+  display: none;
+}
+
+.NoEvents {
+  text-align: center;
+  font-size: large;
+  margin-top: 2rem;
+}

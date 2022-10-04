@@ -1,0 +1,64 @@
+@use "../../../../styles/card.module.scss";
+
+.AnonymousToggleWrapper {
+  flex-shrink: 1;
+  min-width: 0;
+}
+
+.AnonymousToggle {
+  @extend .DearAnonymousCard;
+  appearance: none;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font: inherit;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  margin-top: 0.5rem;
+  max-width: 100%;
+  color: black;
+}
+
+.AnonymousToggle-top {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+.AnonymousIcon {
+  margin-right: 0.5em;
+  flex-shrink: 0;
+}
+
+.PopupAction {
+  text-decoration: underline;
+  text-underline-offset: 0.2rem;
+  cursor: pointer;
+}
+
+.AnonymousDetail {
+  display: block;
+  max-width: calc(100% - 1.5em);
+  font-family: sans-serif;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow-x: hidden;
+}
+
+.AnonymousDetail>span {
+  font-family: "Poppins", sans-serif;
+}
+
+@media only screen and (max-width: 768px) {
+  .AnonymousToggle {
+    max-width: 100%;
+  }
+}
+
+.AnonymousConfirmationBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}

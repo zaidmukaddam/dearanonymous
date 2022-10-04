@@ -1,0 +1,17 @@
+.NotificationsFeed {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.LoginPrompt {
+  text-align: center;
+  font-size: large;
+  margin-top: 2rem;
+}
+
+.LoginPromptLink {
+  color: #ab526b;
+  text-decoration: underline;
+  cursor: pointer;
+}

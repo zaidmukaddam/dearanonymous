@@ -1,0 +1,117 @@
+@use "../../styles/card.module.scss";
+
+.EventCard {
+  @extend .DearAnonymousCard;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  overflow: hidden;
+  text-decoration: none;
+  color: black;
+}
+
+.EventCardImageContainer {
+  aspect-ratio: 2;
+  overflow: hidden;
+  display: flex;
+  border-bottom: 1px solid black;
+  align-items: center;
+  justify-content: center;
+  background-color: #e8f4ff;
+}
+
+.EventNoPicture {
+  color: #c6dcf1;
+}
+
+.EventCardImage {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.EventCardAttendees {
+  display: flex;
+  flex-direction: row;
+  gap: 0.4rem;
+  align-items: center;
+}
+
+.EventCardInfo {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  gap: 0.5rem;
+}
+
+.EventCardTitle {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.EventCardDescription {
+  color: gray;
+  white-space: pre-line;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  -ms-word-break: break-all;
+  word-break: break-word;
+
+  a {
+    color: rgb(69, 103, 167) !important;
+  }
+}
+
+.EventCardButtonContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+}
+
+.EventCardButtonGoing {
+  background-color: #c2f0bc !important;
+  color: black !important;
+}
+
+.EventCardButtonInterested {
+  background-color: rgb(240, 223, 223) !important;
+  color: black !important;
+}
+
+.EventCardButtonShare {
+  color: black !important;
+}
+
+.AttendeeContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+}
+
+.EventCardButtonApprove {
+  background-color: #4caf50 !important;
+  color: white !important;
+}
+
+.EventCardButtonReject {
+  background-color: #f44336 !important;
+  color: white !important;
+}
+
+.EventCardButton {
+  color: black !important;
+}
+
+.ContactEmail {
+  a {
+    color: rgb(69, 103, 167) !important;
+  }
+}
+
+.EventLocation {
+  a {
+    color: rgb(69, 103, 167) !important;
+  }
+}

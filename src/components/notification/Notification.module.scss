@@ -1,0 +1,55 @@
+@use "../../styles/card.module.scss";
+
+.Notification {
+  @extend .DearAnonymousCard;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  cursor: pointer;
+}
+
+// mobile view
+@media (max-width: 768px) {
+  .NotificationText {
+    padding: 0 1rem 0 0;
+  }
+}
+
+.NotificationHeader {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.NotificationHeaderLeft {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+}
+
+.NotificationImageBox {
+  border: 2px solid black;
+  border-radius: 0.2rem;
+  line-height: 0;
+}
+
+.NotificationContext {
+  color: gray;
+}
+
+.UnreadNotification {
+  border-color: rgb(6, 40, 74);
+  border-width: 3px;
+}
+
+.NotificationAnonImage {
+  height: 30px;
+  width: 30px;
+  padding: 10px;
+  align-self: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+}

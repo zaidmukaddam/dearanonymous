@@ -1,0 +1,36 @@
+.UserContent {
+  white-space: pre-line;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  -ms-word-break: break-all;
+  word-break: break-word;
+}
+
+.UserContentHidden {
+  filter: blur(5px);
+  cursor: pointer;
+  will-change: filter;
+}
+
+.UserContentHidden:hover {
+  filter: blur(3px);
+}
+
+.UserContentHidden a {
+  pointer-events: none;
+  color: inherit;
+}
+
+.PostRef {
+  color: inherit;
+  font-weight: 550;
+}
+.PostRef:not(:hover) {
+  text-decoration: none;
+}
+
+.UserContentEmoji {
+  line-height: 1em;
+  position: relative;
+  top: 0.1em;
+}

@@ -1,0 +1,45 @@
+.Container {
+  display: flex;
+  flex-direction: column;
+}
+
+.ApproveDenyBox {
+  flex: 1;
+  margin: 0.25rem 0 0.8rem 0;
+}
+
+.ApproveOrDeny {
+  display: flex;
+  gap: 0.5em;
+  height: 2rem;
+  margin-left: 0.15rem;
+}
+
+.ApproveOrDenyButton {
+  display: flex;
+  border: none;
+  border-radius: 0.2rem;
+  padding: 0.4rem 0.5rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.ApproveOrDenyButton:active {
+  transform: translate3d(-0.1rem, 0.1rem, 0);
+  box-shadow: none;
+}
+
+.ApproveButton {
+  background-color: #4caf50;
+  color: white !important;
+}
+
+.DenyButton {
+  background-color: #f44336;
+  color: white !important;
+}

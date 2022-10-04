@@ -1,0 +1,21 @@
+@use "../Post.module.scss";
+
+.ReactionBar {
+  display: flex;
+  box-sizing: border-box;
+  min-height: 1.5rem;
+  align-items: center;
+}
+
+.PostReactionBar {
+  gap: 0.6rem;
+}
+
+.CommentReactionBar {
+  gap: 0.5rem;
+}
+
+.AddReactionFooterButton {
+  @extend .FooterButton;
+  display: flex !important;
+}

@@ -1,0 +1,37 @@
+.EventStagesDisplay {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.SingleStage {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+
+.StageLine {
+  width: 100%;
+  height: 5px;
+  background-color: rgb(230, 235, 240);
+}
+
+.StageTitle {
+  color: gray;
+}
+
+.Selected {
+  &>.StageTitle {
+    color: rgb(100, 120, 150);
+    font-weight: bold;
+  }
+
+  &>.StageLine {
+    background-color: rgb(100, 120, 150);
+  }
+}

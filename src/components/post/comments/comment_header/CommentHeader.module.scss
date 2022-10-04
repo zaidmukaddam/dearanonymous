@@ -1,0 +1,51 @@
+@import "../comment_header/CommentMenuButton.module.scss";
+
+.CommentHeader {
+  display: flex;
+  gap: 1rem;
+  flex-direction: row;
+  align-items: center;
+  grid-area: header;
+  flex-wrap: wrap;
+}
+
+.CommentAuthor {
+  font-weight: 600;
+  font-size: 0.8rem;
+  color: black;
+}
+
+.ProfileLink {
+  color: black;
+  text-decoration: none;
+}
+
+.CommentDate {
+  font-size: 0.8rem;
+}
+
+.ExpandThreadButton {
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: #789;
+  display: inline-block;
+}
+
+.ExpandThreadButton:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.DevBadge {
+  margin-left: -0.6rem;
+  font-size: 0.7rem;
+  background-color: #62c6e6;
+  color: white;
+  border-radius: 2px;
+}
+
+.TopFanBadge {
+  margin-left: -0.6rem;
+  font-size: 0.7rem;
+  color: #178ab8;
+}

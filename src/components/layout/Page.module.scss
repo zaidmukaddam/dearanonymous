@@ -1,0 +1,16 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  scrollbar-width: none;
+  margin-bottom: 1.2rem;
+  @media screen and (max-width: 30rem) {
+    padding: 0 1rem;
+    max-width: 100%;
+    padding-top: 0.1rem;
+    margin-bottom: 0;
+  }
+}
+
+.page::-webkit-scrollbar {
+  display: none;
+}

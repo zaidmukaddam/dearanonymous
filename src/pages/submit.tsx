@@ -8,7 +8,7 @@ import { useRouter } from "next/router";
 import ImageSubmit from "components/submit/ImageSubmit";
 import Link from "next/link";
 import Image from "next/image";
-import LogoIcon from "images/logo128.png";
+import LogoIcon from "images/logo192.png";
 import EventStages from "components/eventstages/EventStages";
 
 const SubmitPage: NextPage = () => {

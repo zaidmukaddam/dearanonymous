@@ -133,7 +133,7 @@ function AboutPageMain() {
             transitionTime={100}
           >
             <p className={styles.FAQAnswer}>
-              No. dearanonymous.space was created by a group of NMIMS University
+              Yes. dearanonymous.space was created by a group of NMIMS University
               students following the deletion of the MPSTME Confessions Instagram Page.
               dearanonymous.space is a community-based project, and we are open to
               working with anyone that is interested in helping us maintain the site.

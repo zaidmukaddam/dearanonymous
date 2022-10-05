@@ -89,7 +89,14 @@ export default function PrivacyPolicy() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          GitHub repository
+          Frontend GitHub repository
+        </a>{" "}and{" "}
+        <a
+          href="https://github.com/zaidmukaddam/ya-server"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Backend GitHub repository
         </a>{" "}
         and is licensed under the AGPLv3 license.
       </p>

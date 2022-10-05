@@ -33,7 +33,7 @@ export default function Notification(props: NotificationProps) {
   } else {
     const startTime = formatInTimeZone(
       new Date(props.notification.content.startDate),
-      "America/New_York",
+      "Asia/Kolkata",
       "h:mma"
     );
     notifText = (

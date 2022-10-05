@@ -20,7 +20,7 @@ export const makeDate = (date: string) => {
 export const estTheDate = (date: Date) => {
   const undiffedDate = date;
   const estDate = new Date(
-    undiffedDate.toLocaleString("en-US", { timeZone: "America/New_York" })
+    undiffedDate.toLocaleString("en-US", { timeZone: "Asia/Kolkata" })
   );
   const diff = undiffedDate.getTime() - estDate.getTime();
   return new Date(undiffedDate.getTime() + diff);

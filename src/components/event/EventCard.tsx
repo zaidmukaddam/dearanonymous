@@ -30,7 +30,7 @@ interface EventCardProps {
 }
 
 const formatTime = (dateString: string) =>
-  formatInTimeZone(new Date(dateString), "America/New_York", "h:mma");
+  formatInTimeZone(new Date(dateString), "Asia/Kolkata", "h:mma");
 
 export default function EventCard(props: EventCardProps) {
   const { user } = useUser();
@@ -43,7 +43,7 @@ export default function EventCard(props: EventCardProps) {
   const startDate = makeDate(
     formatInTimeZone(
       new Date(props.event.startDate),
-      "America/New_York",
+      "Asia/Kolkata",
       "yyyy-MM-dd"
     )
   );
@@ -164,7 +164,7 @@ export default function EventCard(props: EventCardProps) {
           {props.event.location}
         </Linkify>
         <p>
-          {startDate} • {startTime} - {endTime} ET
+          {startDate} • {startTime} - {endTime} IST
         </p>
         <div className={styles.AttendeeContainer}>
           <div className={styles.EventCardAttendees}>

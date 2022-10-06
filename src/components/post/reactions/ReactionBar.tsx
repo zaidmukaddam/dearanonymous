@@ -38,12 +38,12 @@ interface ReactionBarProps {
 
 enum ReactionType {
   LIKE,
+  DISLIKE,
   HEART,
   LAUGH,
   CRY,
   ANGRY,
   SURPRISE,
-  DISLIKE,
 }
 
 interface Reaction {
@@ -108,12 +108,12 @@ function ReactionBar(props: ReactionBarProps) {
   const icons = useMemo(
     () => [
       [LikeIcon, LikeBWIcon],
+      [DislikeIcon, DislikeBWIcon],
       [HeartIcon, HeartBWIcon],
       [LaughIcon, LaughBWIcon],
       [CryIcon, CryBWIcon],
       [AngryIcon, AngryBWIcon],
       [SurpriseIcon, SurpriseBWIcon],
-      [DislikeIcon, DislikeBWIcon],
     ],
     []
   );
